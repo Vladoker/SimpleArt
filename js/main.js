@@ -12,3 +12,19 @@ for (let anchor of anchors) {
     })
   })
 }
+
+$(document).ready(function(){
+  $('.portfolio__slaider .owl-carousel').owlCarousel({
+    loop:true,
+    margin:15,
+    smartSpeed: 500,
+
+    
+    responsive:{
+        0:{
+            items:1
+        }
+    }
+  })
+});
+
