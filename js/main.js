@@ -17,7 +17,9 @@ $(document).ready(function(){
   $('.portfolio__slaider .owl-carousel').owlCarousel({
     loop:true,
     margin:15,
+    nav:true,
     smartSpeed: 500,
+    navClass: ["owl__prev","owl__next"],
 
     
     responsive:{
