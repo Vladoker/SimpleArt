@@ -15,6 +15,9 @@ for (let anchor of anchors) {
 
 $(document).ready(function(){
   $('.portfolio__slaider .owl-carousel').owlCarousel({
+    autoplay:true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
     loop:true,
     margin:15,
     nav:true,
@@ -29,4 +32,5 @@ $(document).ready(function(){
     }
   })
 });
+
 
