@@ -326,6 +326,7 @@ footer {
     background: #000000ee;
     width: 100%;
     height: 100%;
+    display: none;
     
 }
 .portfolio__slaider .owl-carousel .item img{
@@ -341,7 +342,7 @@ footer {
 }
 .owl__prev {
     border: none;
-    background: url("/img/l.png") no-repeat center;
+    background: url("../img/l.png") no-repeat center;
     background-position: center;
     background-size: 100%;
     width: 80px;
@@ -352,7 +353,7 @@ footer {
 }
 .owl__next {
     border: none;
-    background: url("/img/r.png") no-repeat center;
+    background: url("../img/r.png") no-repeat center;
     background-position: center;
     background-size: 100%;
     width: 80px;
