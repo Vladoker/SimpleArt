@@ -194,18 +194,13 @@
 				</p>
 
 				<div class="row">
-					<div class="col-xl-3 col-md-4 col-sm-6"><img src="PhotSaitaSimpleArt/shkaf-2.png" alt=""></div>
-					<div class="col-xl-3 col-md-4 col-sm-6"><img src="PhotSaitaSimpleArt/garderob2.png" alt=""></div>
-					<div class="col-xl-3 col-md-4 col-sm-6"><img src="PhotSaitaSimpleArt/detskay.png" alt=""></div>
-					<div class="col-xl-3 col-md-4 col-sm-6"><img src="PhotSaitaSimpleArt/prihozhaya.png" alt=""></div>
-					<div class="col-xl-3 col-md-4 col-sm-6"><img src="PhotSaitaSimpleArt/kyhnya.png" alt=""></div>
-					<div class="col-xl-3 col-md-4 col-sm-6"><img src="PhotSaitaSimpleArt/classika-zal.png" alt=""></div>
-					<div class="col-xl-3 col-md-4 col-sm-6"><img src="PhotSaitaSimpleArt/spalnya-vecher.png" alt=""></div>
-					<div class="col-xl-3 col-md-4 col-sm-6"><img src="PhotSaitaSimpleArt/vanaya.png" alt=""></div>
-					<div class="col-xl-3 col-md-4 col-sm-6"><img src="PhotSaitaSimpleArt/office.png" alt=""></div>
-					<div class="col-xl-3 col-md-4 col-sm-6"><img src="PhotSaitaSimpleArt/peregorodka-stelazh.png" alt=""></div>
-					<div class="col-xl-3 col-md-4 col-sm-6"><img src="PhotSaitaSimpleArt/hall-hospital.png" alt=""></div>
-					<div class="col-xl-3 col-md-4 col-sm-6"><img src="PhotSaitaSimpleArt/restoran.png" alt=""></div>
+					<?php
+						$arrayFiles = glob("./Portfolio/window/*");
+						
+						foreach($arrayFiles as $item) {
+							echo '<div class="col-xl-3 col-md-4 col-sm-6 imgPortfolio"><img src=' . $item . ' alt=""></div>';
+						}						
+					?>					
 				</div>
 			</div>		
 		</section>
@@ -267,16 +262,18 @@
 	<div class="btn__top"><a class="nav-item nav-link" href="#top"><img src="PhotSaitaSimpleArt/top2.png" alt=""></a></div>
 	<div class="portfolio__slaider">
 		<div class="owl-carousel owl-theme">
-			<div class="item"><img src="PhotSaitaSimpleArt/shkaf-2.png" alt=""></div>
-			<div class="item"><img src="PhotSaitaSimpleArt/detskay.png" alt=""></div>
-			<div class="item"><img src="PhotSaitaSimpleArt/classika-zal.png" alt=""></div>
-			<div class="item"><img src="PhotSaitaSimpleArt/vanaya.png" alt=""></div>
-			<div class="item"><img src="PhotSaitaSimpleArt/hall-hospital.png" alt=""></div>
+			<?php
+				$allPhotos = glob("./Portfolio/**/*");
+				foreach($allPhotos as $photo) {
+					echo '<div class="item"><img src=' . $photo . ' alt=""></div>';
+				}	
+			?>
 		</div>
-		<span class="icon-right"></span>	
+			
 	</div>
+	
 
-
+	
 
 
 	<script src="js/jquery-3.4.1.slim.min.js"></script>

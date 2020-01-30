@@ -1,4 +1,6 @@
-const anchors = document.querySelectorAll('.nav-item.nav-link')
+const anchors = document.querySelectorAll('.nav-item.nav-link'),
+      imagesPortfoli = document.querySelectorAll(".imgPortfolio"),
+      modalSlaider = document.querySelector(".portfolio__slaider")
 
 for (let anchor of anchors) {
   anchor.addEventListener('click', function (e) {
@@ -12,12 +14,19 @@ for (let anchor of anchors) {
     })
   })
 }
+imagesPortfoli.forEach(item => {
+  item.addEventListener("click", event => {
+    modalSlaider.style.display = "flex";
+  })
+});
+
+
 
 $(document).ready(function(){
   $('.portfolio__slaider .owl-carousel').owlCarousel({
-    autoplay:true,
-    autoplayTimeout: 3000,
-    autoplayHoverPause: true,
+    autoplay:false,
+    autoplayTimeout: 0,
+    autoplayHoverPause: false,
     loop:true,
     margin:15,
     nav:true,
