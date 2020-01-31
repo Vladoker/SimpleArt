@@ -41,7 +41,19 @@ $(document).ready(function(){
     
     responsive:{
         0:{
-            items:1
+            items:1,
+            autoplay:false,
+            autoplayTimeout: 0,
+            autoplayHoverPause: false,
+        },
+        576:{
+          items:2,
+          autoplay:false,
+          autoplayTimeout: 0,
+          autoplayHoverPause: false,
+        },
+        1200:{
+          items:3
         }
     }
   })

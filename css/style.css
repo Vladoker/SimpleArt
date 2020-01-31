@@ -388,6 +388,7 @@ footer {
     border: none;
     outline: none!important;
     transition: 0.5s;
+    z-index: 50;
 }
 .modal-close:hover {
     transform: rotate(-95deg);
