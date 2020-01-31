@@ -261,6 +261,7 @@
 	</footer>
 	<div class="btn__top"><a class="nav-item nav-link" href="#top"><img src="PhotSaitaSimpleArt/top2.png" alt=""></a></div>
 	<div class="portfolio__slaider">
+	<button class="modal-close"></button>
 		<div class="owl-carousel owl-theme">
 			<?php
 				$allPhotos = glob("./Portfolio/**/*");
